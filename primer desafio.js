@@ -5,16 +5,16 @@ class Usuario {
     constructor (nombre, apellido, libros, mascotas) {
         this.nombre = nombre;
         this.apellido = apellido;
-        this.libros = libros;
-        this.mascotas = mascotas;
+        this.libros = [];
+        this.mascotas = [];
     }
 
     getFullName() {
 
     }
 
-    addMascota() {
-
+    addMascota(firulais, rocko) {
+        this.mascotas.push [firulais, rocko]
     }
 
     countMascotas() {
@@ -30,3 +30,7 @@ class Usuario {
     }
 
 }
+
+
+const pepe = new Usuario('Pepe')
+const pipi = new Usuario('Pipi')
