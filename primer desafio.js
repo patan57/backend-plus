@@ -8,8 +8,7 @@ class Usuario {
     }
 
     getFullName() {
-        return 
-            `El nombre del ganador por sorteo es ${this.nombre.apellido}`;
+        return `El nombre del ganador por sorteo es ${this.nombre} ${this.apellido}`;
     }
 
     addMascota(mascota) {
@@ -44,3 +43,16 @@ console.log(pepe.getFullName());
 console.log(pepe.countMascotas());
 console.log(pepe.getBookNames());
 
+//fin primera entrega
+
+Promise.resolve(30)
+.then( x => x + 1)
+.then( x => x * 2)
+.then( x => {
+    if(x==22) throw 'Error'
+    else return 80
+})
+.then( x => 30)
+.then( x => x / 2)
+.then(console.log)
+.catch(console.log)

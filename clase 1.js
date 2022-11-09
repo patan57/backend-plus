@@ -87,30 +87,30 @@
 
 //desafio generico 1
 
-function mostrarLetras(palabra, terminar){
-    let i = 0
-    const timer = setInterval(() => {
-        if(i < palabra.legth){
-            log(palabra[i]);
-            i++;
-        }
-        else{
-            clearInterval(timer)
-            terminar()
-        }
-    }, 1000);
+//function mostrarLetras(palabra, terminar){
+//    let i = 0
+//    const timer = setInterval(() => {
+//        if(i < palabra.legth){
+//            log(palabra[i]);
+//            i++;
+//        }
+//        else{
+//            clearInterval(timer)
+//            terminar()
+//        }
+//    }, 1000);
 
-}
+//}
 
-const fin =log('termine')
+//const fin =log('termine')
 
-mostrarLetras('Hola', fin)
+//mostrarLetras('Hola', fin)
 
-setTimeout(() => {mostrarLetras('hola', fin)}, 0)
-setTimeout(() => {mostrarLetras('queso', fin)}, 250)
-setTimeout(() => {mostrarLetras('casa', fin)}, 500)
+//setTimeout(() => {mostrarLetras('hola', fin)}, 0)
+//setTimeout(() => {mostrarLetras('queso', fin)}, 250)
+//setTimeout(() => {mostrarLetras('casa', fin)}, 500)
 
-const log = p => console.log(p)
+//const log = p => console.log(p)//
 
 //clase 4
 // const delay = ret => {
@@ -150,51 +150,27 @@ const log = p => console.log(p)
 // log('otras tareas ...')// esta en paralelo con la 1
 
 
-//DESAFIO GENERICO 1
-function mostrarLetras(palabra, terminar){
-    let i = 0
-    const timer = setInterval(() => {
-        // si estamos dentro de la palabra
-        if(i < palabra.length){
-            log(palabra[i]);
-            i++;
-        }
-        else {
-            //limpiamos el intervalo
-            clearInterval(timer)
-            terminar()
-        }
-    }, 1000);
-
-}
-
-const fin = () => log('termine')
-
-
-setTimeout(() => { mostrarLetras('Hola', fin) }, 0 )
-setTimeout(() => { mostrarLetras('Queso', fin) }, 250 )
-setTimeout(()=> { mostrarLetras('Casa', fin) }, 500 )
 
 //desafio generico 2
 
 //A 
 //B
 //C
-try {
+// try {
     
-    fs.writeFileSync('fyh.txt', new Date().toLocaleString())
-} catch (error) {
-    throw new Error(`Error al escribir ${error}`)
-}
+//     fs.writeFileSync('fyh.txt', new Date().toLocaleString())
+// } catch (error) {
+//     throw new Error(`Error al escribir ${error}`)
+// }
 
-try {
+// try {
     
-    const contenido = fs.readFileSync('index.js', 'utf-8')
-    log(contenido)
-}
-catch (error) {
-    throw new Error(`Error al leer ${error}`)
-}
+//     const contenido = fs.readFileSync('index.js', 'utf-8')
+//     log(contenido)
+// }
+// catch (error) {
+//     throw new Error(`Error al leer ${error}`)
+// }
 
 //desafio 3
 // FS con callbacks
@@ -250,20 +226,25 @@ catch (error) {
 
 //desafio 4
 
-const fs = require('fs')
-const log = p=> console.log(p)
+// const fs = require('fs')
+// const log = p=> console.log(p)
 
-let data = ''
-fs.promises.readFile('./info.txt', 'utf8').then(contenido =>{
+// let data = ''
+// fs.promises.readFile('./info.txt', 'utf8').then(contenido =>{
 
-    data = JSON.parse(contenido) //convirtiendo en Json
-    log(data)
-    data.contenidoObj.author = 'Coderhouse' 
+//     data = JSON.parse(contenido) //convirtiendo en Json
+//     log(data)
+//     data.contenidoObj.author = 'Coderhouse' 
 
-    //log(data)
+//     //log(data)
 
-    fs.promises.writeFile('./package.json.coder', JSON.stringify(data,null,2))
-    .then(d=> log('termine'))
-    .catch(err=>log(err))
+//     fs.promises.writeFile('./package.json.coder', JSON.stringify(data,null,2))
+//     .then(d=> log('termine'))
+//     .catch(err=>log(err))
 
-}).catch(err=>log(err))
+// }).catch(err=>log(err))
+
+
+//primer desafio generico clase 4
+
+
