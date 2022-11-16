@@ -245,6 +245,36 @@
 // }).catch(err=>log(err))
 
 
-//primer desafio generico clase 4
 
+
+Promise.resolve(30)
+.then( x => x + 1)
+.then( x => x * 2)
+.then( x => {
+    if(x==22) throw 'Error'
+    else return 80
+})
+.then( x => 30)
+.then( x => x / 2)
+.then(console.log)
+.catch(console.log)
+
+//desafio genérico clase 4
+try {
+    const fs = require ('fs')
+
+fs.writeFileSync('fyh.txt', new Date ().toLocaleString())
+
+} catch (error) {
+    throw new Error (`Error al escribir ${error}`
+    )
+}
+
+
+try {
+    const contenido = fs.readFileSync ('desafios.js', 'utf-8')
+console.log(contenido);
+} catch (error) {
+    throw new Error (`Error al leer ${error}`)
+}
 
