@@ -247,34 +247,72 @@
 
 
 
-Promise.resolve(30)
-.then( x => x + 1)
-.then( x => x * 2)
-.then( x => {
-    if(x==22) throw 'Error'
-    else return 80
-})
-.then( x => 30)
-.then( x => x / 2)
-.then(console.log)
-.catch(console.log)
+// Promise.resolve(30)
+// .then( x => x + 1)
+// .then( x => x * 2)
+// .then( x => {
+//     if(x==22) throw 'Error'
+//     else return 80
+// })
+// .then( x => 30)
+// .then( x => x / 2)
+// .then(console.log)
+// .catch(console.log)
 
-//desafio genérico clase 4
-try {
-    const fs = require ('fs')
+// //desafio genérico clase 4
+// try {
+//     const fs = require ('fs')
 
-fs.writeFileSync('fyh.txt', new Date ().toLocaleString())
+// fs.writeFileSync('fyh.txt', new Date ().toLocaleString())
 
-} catch (error) {
-    throw new Error (`Error al escribir ${error}`
-    )
-}
+// } catch (error) {
+//     throw new Error (`Error al escribir ${error}`
+//     )
+// }
 
 
-try {
-    const contenido = fs.readFileSync ('desafios.js', 'utf-8')
-console.log(contenido);
-} catch (error) {
-    throw new Error (`Error al leer ${error}`)
-}
+// try {
+//     const contenido = fs.readFileSync ('desafios.js', 'utf-8')
+// console.log(contenido);
+// } catch (error) {
+//     throw new Error (`Error al leer ${error}`)
+// }
 
+// //callback vs promises
+
+// //CB
+
+// const doAsyncStuffWithCallback = (numero1, numero2, callback) => {
+//     const resultado = numero1 + numero2
+//     return setTimeout(() => {
+//         callback(resultado)
+//     }, 500)
+// }
+
+// doAsyncStuffWithCallback (1, 3, (result) => {
+//     console.log(result);
+// })
+
+// //PS
+
+// const doAsyncStuffWithPromises = (numero1, numero2) => {
+//     const resultado = numero1 + numero2
+//     return new Promise(resolve => {
+//         setTimeout(() => {
+//             resolve(resultado)
+//         }, 500 )
+//     })
+// }
+
+// doAsyncStuffWithPromises(1, 3)
+// .then(result => console.log(result)
+// )
+
+// const result = await doAsyncStuffWithPromises(1, 3)
+
+
+//console.log
+
+const user = { name: 'Mauro'};
+user.name = 'David';
+console.log(user.name);
