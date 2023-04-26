@@ -1,1 +1,23 @@
-[]
+[
+    {
+        "title": "Alfajor",
+        "price": 150,
+        "thumbnail": "https://pampadirect.com/product_images/uploaded_images/alfajor-negro-relleno-de-dulce-de-leche.jpg",
+        "id": 1
+    },
+    
+    {
+        "title": "Agua",
+        "price": 100,
+        "thumbnail": "https://d3ugyf2ht6aenh.cloudfront.net/stores/798/865/products/48146782-8488201d17fe506c1f16639330522874-640-0.webp",
+        "id": 2
+    },
+
+    {
+        "title": "Papas fritas",
+        "price": 190,
+        "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_689170-MLA53072007571_122022-V.jpg",
+        "id": 3
+
+
+}]

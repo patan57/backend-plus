@@ -1,0 +1,25 @@
+{
+  "name": "clase5",
+  "version": "1.2.0",
+  "description": "clase5",
+  "type": "module",
+  "main": "clase5.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patan57/backend-plus.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patan57/backend-plus/issues"
+  },
+  "homepage": "https://github.com/patan57/backend-plus#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "moment": "~2.29.4"
+  },
+  "keywords": []
+}
